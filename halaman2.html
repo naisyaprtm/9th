@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second page</title>
+    <style>
+        body {
+            background-color: #EDE3C7; /* Warna beige muda */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: black; /* Warna font hitam */
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .section img {
+            width: 200px; /* Ukuran sedang */
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid #D14775;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .text {
+            max-width: 450px;
+        }
+        /* Posisi bergantian */
+        .section.reverse {
+            flex-direction: row-reverse;
+        }
+        button {
+            background-color: #E2CEB1; /* Warna krem lembut */
+            color: black; /* Warna teks tombol hitam */
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #D5B89B; /* Warna lebih gelap saat hover */
+        }
+        /* Responsif untuk layar kecil */
+        @media (max-width: 600px) {
+            .section, .section.reverse {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto di kiri, teks di kanan -->
+        <div class="section">
+            <img src="img/haruto.jpeg" alt="Foto Seseorang 1">
+            <div class="text">
+                <p>another hai from me hehe :p</p>
+                <p>I have loved you since you were nineteen, and now you're turning twenty. Your very first page of not being the part of teenager again HAHAHA (that's mean you're old). Aa, i know you know how proud i am of you. cause you're being you and you always do your best for anything, even for anyone, not just for yourself. You always made anyone around you feel safe, feel loved. I'm  glad you're here, for me. May happiness bloom in your heart all year long. </p>
+            </div>
+        </div>
+
+        <!-- Foto di kanan, teks di kiri -->
+        <div class="section reverse">
+            <img src="img/develope.jpg" alt="Foto Seseorang 2">
+            <div class="text">
+                <p>I don't know about how many challenges that you have faced until you're turning twenty now. But i hope everything's gonna be much better and alright for your life. Even in the midst of every pain, difficulty, and chaos, you're commiting yourself to be a little more kind and gentle with your heart. I hope things are changing for you and you're staring to see the purpose and the good in all that you've been through. And you deserve to feel what it feels like to be okay. To feel like the world isn't againts to you. To feel like you aren't constantly treading water just to keep from drowning. More than anything, you deserve to be okay. Lets shine like a star in everything you do and pray as much as you can. Cause i want to see you win your life. I'm gonna be your top supporter and i'm gonna be a lil sister who's gonna proud of you.</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="halaman3.html"><button>tap-tap</button></a>
+
+</body>
+</html>

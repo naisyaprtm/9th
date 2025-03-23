@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>third page</title>
+    <style>
+        body {
+            background-color: #EDE3C7;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+        .music-container {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .album-cover {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .song-info {
+            margin-top: 15px;
+        }
+        .song-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .artist {
+            font-size: 16px;
+            color: gray;
+        }
+        .controls {
+            margin-top: 15px;
+        }
+        button {
+            background-color: #E2CEB1;
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #D5B89B;
+        }
+        .lyrics {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-align: left;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="music-container">
+        <img src="img/tawws.jpg" alt="Album Cover" class="album-cover">
+        <div class="song-info">
+            <p class="song-title">The Apartment We Won't Share</p>
+            <p class="artist">Niki</p>
+        </div>
+
+        <!-- Pemutar Musik -->
+        <audio id="audio" loop>
+            <source src="media/song tawws.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung pemutar audio.
+        </audio>
+
+        <div class="controls">
+            <button onclick="togglePlay()">▶ Play</button>
+        </div>
+
+        <!-- Lirik Lagu -->
+        <div class="lyrics">
+            <p>Hehehehe totally sorry cause i need to play this song :p anyways, lessgow to the other page while this song playing and enjoy <3 (open before the lyrics start playing and synch it)</p>
+        </div>
+    </div>
+
+    <a href="halaman4.html" target="content"><button>tap-tap</button></a>
+
+    <script>
+        let audio = document.getElementById("audio");
+        let button = document.querySelector(".controls button");
+
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                button.innerHTML = "⏸ Pause";
+            } else {
+                audio.pause();
+                button.innerHTML = "▶ Play";
+            }
+        }
+    </script>
+
+</body>
+</html>

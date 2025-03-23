@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fourth page</title>
+    <style>
+        body {
+            background-color: #EDE3C7;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+        }
+        video {
+            width: 600px;
+            border-radius: 10px;
+        }
+        .next-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #E2CEB1;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <video controls>
+            <source src="media/vhar.MOV" type="video/mp4">
+            Browser tidak mendukung video.
+        </video>
+    </div>
+
+    <button class="next-button" onclick="nextPage()">tap-tap</button>
+
+    <script>
+        window.onload = function() {
+            if (localStorage.getItem("musicPlaying") === "true") {
+                let audio = new Audio("musik.mp3");
+                audio.loop = true;
+                audio.play();
+            }
+        }
+
+        function nextPage() {
+            window.location.href = "halaman5.html";
+        }
+    </script>
+
+</body>
+</html>
